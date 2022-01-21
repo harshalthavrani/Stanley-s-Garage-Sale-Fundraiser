@@ -1,0 +1,92 @@
+<!--
+Full Name: Harshal Thavrani
+Student #: 8733610
+Section  : 3
+Date     : 24/5/2021
+-->
+<!DOCTYPE html> 
+<html lang="en">
+   <!--head of the page begins-->
+    <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="./main.css"> <!--link to CSS-->
+      <title> Assignment 2 </title> <!--helps you to write a title of the page-->
+      <script src="./javascript.js"></script> <!--Java Script Source File-->
+      </head> <!--Head Of the Page Ends -->
+      <body> <!--Body of the Page Begins -->
+         <h1>Stanley's Garage Sale Fundraiser</h1> <!--heading Of the Page-->
+         <fieldset id="field"> <!--creates a set of field by making a border outside the fields-->
+            <legend>Items</legend> <!--Title of the fieldSet-->
+            <br> <!--Enters a new Line-->
+            <div class="menu"> <!--groups the elements -->
+            <div class="item menu1"> <p>Box Of Toys - $1 &nbsp; <span id="bot"></span></p></div> <!--Shows a label-->
+            <div class="item menu2"><p><input type="text" onblur="boxoftoys()" id="bot1"></p></div> <!--Displays a textbox-->
+            <div class="item menu3"><p>Car Rims - $115 &nbsp; <span id="cr"></span></div> <!--Shows a label-->
+            <div class="item menu4"><p><input type="text" onblur="carrims()" id="cr1"></p></div><!--Displays a textbox-->
+            <div class="item menu5"> <p>Vintage Dishes - $135 &nbsp; <span id="vd"></span></p></div> <!--Shows a label-->
+            <div class="item menu6"><p><input type="text" onblur="vintagedishes()" id="vd1"></p></div> <!--Displays a textbox-->
+            <div class="item menu7"> <p>Vintage Glassware - $125 &nbsp; <span id="vg"></span></p></div> <!--Shows a label-->
+            <div class="item menu8"><p><input type="text" onblur="vintageglassware()" id="vg1"></p></div> <!--Displays a textbox-->
+            <div class="item menu9"><p>Garden Tools - $120 &nbsp; <span id="gt"></span></p></div> <!--Shows a label-->
+            <div class="item menu10"><p><input type="text" onblur="gardentools()" id="gt1"></p></div> <!--Displays a textbox-->
+            <br> <!--Enters a new Line-->
+            <span id="errornumber"></span> <!--will Display the error if the user input is not a number--> 
+            </div> 
+            </fieldset>
+            <br> <!--Enters a new Line-->
+            <form > <!--Creates a new form-->
+           <fieldset id="userdetail"> <!--creates a set of field by making a border out side the fields-->
+               <legend>User Details</legend>  <!--Title of the fieldSet-->
+               <br> <!--Enters a new Line-->
+               <span id="errorname"></span> <!--Will Display the error here if the user doesnt enters name-->
+               <span id="invalidname"></span> <!--Will Display the error here if the user enters invalid name-->
+               <br> <!--Enters a new Line-->
+                <label for="name">Name:</label> <!--Shows a label-->
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!--creates a space-->
+                <input type="text" id="name" name="Name:"> <!--Displays a textbox-->
+                <br><br> <!--Enters a new Line-->
+                <span id="erroremail"></span> <!--wiLL DISPLAY THE error here if the user enters invalid email-->
+                <br> <!--Enters a new Line-->
+                <label for="email">Email:</label> <!--Shows a label-->
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!--creates a space-->
+                <input type="textbox" name="email" id="email"> <!--Displays a textbox-->
+                <br><br> <!--Enters a new Line-->
+                <span id="errorcredit"></span> <!--wiLL DISPLAY THE error here if the user enters invalid credit card number-->
+                <br> <!--Enters a new Line-->
+                <label for="creditcard">Credit Card:</label> <!--Shows a label-->
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!--creates a space-->
+                <input type="textbox" name="creditcard" id="creditcard"> <!--Displays a textbox-->
+                <br><br> <!--Enters a new Line-->
+                <span id="errormonth"></span> <!--wiLL DISPLAY THE error here if the user enters invalid credit card expiry month-->
+                <br> <!--Enters a new Line-->
+                <label for="creditmonth">Expiry Month:</label> <!--Shows a label-->
+                &nbsp;&nbsp; <!--creates a space-->
+                <input type="textbox" name="creditmonth" id="creditmonth"> <!--Displays a textbox-->
+                <br><br> <!--Enters a new Line-->
+                <span id="erroryear"></span> <!--wiLL DISPLAY THE error here if the user enters invalid credit card expiry year-->
+                <br> <!--Enters a new Line-->
+                <label for="credityear">Expiry Year</label> <!--Shows a label-->
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!--creates a space-->
+                <input type="textbox" name="credityear" id="credityear"> <!--Displays a textbox-->
+                <br><br> <!--Enters a new Line-->
+                <button type="button" id="submit" value="Submit" onclick= " return reciept()">Submit</button>&nbsp;&nbsp; <!--creates a submit button-->
+                <button type="reset" id="reset" value="Reset Fields">Reset Fields</button>    <!--creates a reset button-->  
+          </fieldset>
+        </form> 
+        <div class="col2">
+            <h1>Invoice</h1> <!--Invoice -->
+            <span id="selfcheckout"> </span> <!--will show the customer name here-->
+            <br>
+            <span id="customeremail"> </span> <!--will show the customer email here-->
+            <br>
+            <span id="customercredit"></span> <!--will show the customer creditcard number here-->
+            <br>
+            <span id="customermonth"></span> <!--will show the customer creditcard expiry month here-->
+            <br>
+            <span id="customeryear"></span> <!--will show the customer creditcard expiry year here-->
+            <br>
+            <br>
+            <span id="table"> </span> <!--Will show the items list-->
+          </div>
+        </body> <!--ENd of the body of the webpage-->
+        </html>

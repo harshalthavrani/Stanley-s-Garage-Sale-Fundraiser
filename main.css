@@ -1,0 +1,52 @@
+#userdetail 
+{
+    width: 30%; /*Sets the width to 30% of the page*/
+}
+#field
+{
+    width: 45%; /*Sets the width to 45% of the page*/
+}
+.item{
+    box-sizing: border-box;
+    float: left;
+    width: 50%; /*Sets the width to 50% of the page*/
+    height: 30%; /*Sets the heigth to 30% of the page*/
+  }  
+.menu {
+    width: 90%; /*Sets the width to 90% of the page*/
+    height: 80%; /*Sets the heigth to 80% of the page*/
+    overflow: hidden;
+}
+.col2
+  {
+    border: black;
+    border-radius: 25px; /*Sets the border radius to 25px*/
+    border-width: 3px; /*Sets the border width to 3px*/
+    border-style: solid; /*Sets the border style to solid*/
+    padding:20px; /*Sets the padding of the div to 20px*/
+    margin: -700px 800px; /*Sets the margin og the div to -700px top and 800 px right*/
+    position: absolute; /*Sets the position to the absolute of the page*/
+    height: max-content; /*Sets the height to the maximum content of the page*/
+    width: max-content; /*Sets the width to the maximum content of the page*/
+  }
+  table
+  {
+   border-collapse: collapse; /*Shows the border as a single border*/
+   border: 2px solid black; /*Sets the border color to black*/
+  }
+  #errornumber
+  {
+      color:red; /*Sets the color to red*/
+  }
+  #errorname
+  {
+      color:red; /*Sets the color to red*/
+  }
+  #erroremail
+  {
+      color:red; /*Sets the color to red*/
+  }
+  #errorcredit
+  {
+      color:red; /*Sets the color to red*/
+  }
